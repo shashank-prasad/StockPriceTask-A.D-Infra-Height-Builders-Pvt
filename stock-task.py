@@ -3,6 +3,10 @@
 def CalculateProfit(StockPrice):
     profit=0
     days=len(StockPrice)
+
+    #Will be zero if data of only one day is given
+    if(days<=1):
+    	return 0;
     
     # Bought is a variable to check if curently a stock is bought or not, bought=-1 if no
     bought=-1
